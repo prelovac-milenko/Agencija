@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f1ec;
+}
+
+/* NAVIGACIJA */
+nav {
+    position: absolute;
+    top: 20px; /* Da se ne zalijepi za vrh */
+    left: 50%; /* Centriranje */
+    transform: translateX(-50%); /* Precizno centriranje */
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    border-radius: 30px;
+}
+.logo{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #c49666;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* HERO SEKCIONA */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('point3d-commercial-imaging-ltd-oR1M4Bl1PUU-unsplash.jpg') center/cover no-repeat;
+    opacity: 0.4; /* Smanjuje opacity slike */
+    z-index: -1; /* Da slika ostane u pozadini */
+}
+
+
+.hero h1 {
+    font-family: "Sen", sans-serif;
+    font-size: 220px;
+    font-weight: bold;
+    color: #c49666;
+    text-shadow: 0px 4px 10px rgba(5, 5, 5, 0.5);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.ch-co {
+    position: absolute;
+    bottom: -60px; /* Spušta deo forme ispod hero sekcije */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; /* Prilagođeno širini forme */
+    z-index: 10;
+}
+.booking {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.booking div {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking label {
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+}
+
+.booking input,
+.booking select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+}
+
+/* Stilizacija dugmeta */
+.check-availability {
+    position: absolute;
+    bottom: -3px; /* Spušta deo forme ispod hero sekcije */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.check-availability button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 100px 50px 50px;
+    background-color: #ffffff;
+    height: 400px;
+}
+
+.about h2 {
+    font-size: 28px;
+    font-style: italic;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.about-images{
+    display: flex;
+    flex-direction: row;
+}
+.about1{
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 620px;
+    top: 880px;
+}
+.about2{
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 1000px;
+    left: 550px;
+}
+
+/* AMENITIES */
+.amenities {
+    text-align: center;
+    padding: 30px;
+    background-color: #EBE8E8;
+}
+
+.amenities h2 {
+    font-size: 28px;
+    font-style: italic;
+}
+
+.amenities-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.amenities-content img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.amenities-list {
+    text-align: left;
+}
+
+.amenities-list div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.amenities-list img {
+    width: 30px;
+}
+.abus{
+    position: absolute;
+    width: 450px;
+    top: 920px;
+    left: 920px;
+}
+/* FOOTER */
+footer {
+    background-color: #f6f1ec;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section2 {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #c49666;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 5px;
+    transition: transform 0.3s;
+    
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.footer-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section2 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #c49666;
+}
