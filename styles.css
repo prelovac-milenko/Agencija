@@ -132,7 +132,7 @@ nav ul li a {
 /* Stilizacija dugmeta */
 .check-availability {
     position: absolute;
-    bottom: -3px; /* Spušta deo forme ispod hero sekcije */
+    bottom: -12px; /* Spušta deo forme ispod hero sekcije */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -153,42 +153,32 @@ nav ul li a {
     text-align: center;
     padding: 100px 50px 50px;
     background-color: #ffffff;
-    height: 400px;
+    height: 920px;
 }
-
-.about h2 {
-    font-size: 28px;
-    font-style: italic;
+.about-us-title{
+    font-family: "Sen", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 5px;
 }
-
-.about-content {
+.text-about-us{
+    font-family: "Sen", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 50%;
+}
+.about-title-line{
     display: flex;
-    gap: 40px;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 0px;
+    align-items: center;
 }
-.about-images{
-    display: flex;
-    flex-direction: row;
-}
-.about1{
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    left: 620px;
-    top: 880px;
-}
-.about2{
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 1000px;
-    left: 550px;
-}
-
+hr.solid {
+    border-top: 3px solid #181818;
+    width: 300px;
+    margin-top: 2px;
+  }
+  
 /* AMENITIES */
 .amenities {
     text-align: center;
@@ -197,15 +187,17 @@ nav ul li a {
 }
 
 .amenities h2 {
-    font-size: 28px;
-    font-style: italic;
+    font-family: "Sen", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
 .amenities-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     margin-bottom: 50px;
 }
 
@@ -216,6 +208,7 @@ nav ul li a {
 
 .amenities-list {
     text-align: left;
+    font-family: "Sen", sans-serif;
 }
 
 .amenities-list div {
@@ -228,17 +221,75 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+   
 }
 
 .amenities-list img {
     width: 30px;
 }
-.abus{
-    position: absolute;
-    width: 450px;
-    top: 920px;
-    left: 920px;
+
+#reviewsCarousel {
+    background: transparent;
+    box-shadow: none;
+    border: none;
 }
+
+.reviews {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.reviews-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Sen", sans-serif;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+.guest-img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important;  /* Centriranje */
+    margin-bottom: 21px !important; 
+}
+
+
+
+.review-text {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+.guest-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.guest-rating {
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+/* Bootstrap carousel controls */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}
+
 /* FOOTER */
 footer {
     background-color: #f6f1ec;
@@ -246,6 +297,7 @@ footer {
     padding: 40px 20px;
     text-align: center;
     margin-top: 50px;
+    font-family: "Sen", sans-serif;
 }
 
 .footer-content {
@@ -298,4 +350,30 @@ footer {
     margin-bottom: 10px;
     font-size: 18px;
     color: #c49666;
+}
+
+/* Carousel stilovi */
+.carousel {
+    width: 56%; /* Smanjena širina */
+    margin: 50px auto; /* Centrirano sa gornjim razmakom */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Blagi shadow efekat */
+    border-radius: 10px; /* Zaobljeni uglovi */
+    overflow: hidden; /* Da slike ne izlaze van okvira */
+}
+
+.carousel-inner img {
+    width: 100%; /* Širina u odnosu na parent */
+    height: 400px; /* Ograničena visina */
+    object-fit: cover; /* Da slike budu lijepo prikazane bez razvlačenja */
+    border-radius: 10px; /* Zaobljeni uglovi slika */
+}
+
+/* Dugmići za prev/next */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Čini strelice bijelim */
+}
+
+.foot-rew{
+    display: flex;
+    flex-direction: column;
 }
